@@ -46,10 +46,10 @@ class StatisticsServiceTest {
         StatisticsService service = new StatisticsService();
 
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 15;
+        double expected = 15.0;
 
-        long actual = service.calculateAver(purchases);
-
+        double actual = service.calculateAver(purchases);
+        
         assertEquals(expected, actual);
     }
 
