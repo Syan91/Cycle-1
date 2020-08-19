@@ -4,11 +4,11 @@ public class StatisticsService {
     public long calculateSum(long[] purchases) {
         long sum = 0;
         for (long purchase : purchases) {
-            // аналог sum = sum + purchase;
             sum += purchase;
         }
         return sum;
     }
+
     public double calculateAver(long[] purchases) {
         long sum = 0;
         double average = 0;
@@ -21,6 +21,7 @@ public class StatisticsService {
 
         return average;
     }
+
     public long findMax(long[] purchases) {
         int indexOfMax = 0;
         for (int i = 0; i < purchases.length; i++) {
@@ -28,21 +29,20 @@ public class StatisticsService {
                 indexOfMax = i;
             }
         }
-            return indexOfMax;
-        }
+        return indexOfMax;
+    }
 
 
     public long findMin(long[] purchases) {
         int indexOfMin = 0;
-        for (int i = 0; i < purchases.length; i++)
-        {
-             if (purchases[i] <= purchases[indexOfMin])
-            {
+        for (int i = 0; i < purchases.length; i++) {
+            if (purchases[i] <= purchases[indexOfMin]) {
                 indexOfMin = i;
             }
         }
         return indexOfMin;
     }
+
     public long lowerThanAver(long[] purchases) {
         long sum = 0;
         long average;
@@ -60,6 +60,7 @@ public class StatisticsService {
         }
         return count;
     }
+
     public long biggerThanAver(long[] purchases) {
         long sum = 0;
         long average;
