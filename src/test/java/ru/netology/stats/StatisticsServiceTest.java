@@ -49,17 +49,15 @@ class StatisticsServiceTest {
         double expected = 15.0;
 
         double actual = service.calculateAver(purchases);
-        
+
         assertEquals(expected, actual);
     }
 
     @Test
     void lowerThanAver() {
         StatisticsService service = new StatisticsService();
-
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
-
         long actual = service.lowerThanAver(purchases);
 
         assertEquals(expected, actual);
@@ -76,4 +74,4 @@ class StatisticsServiceTest {
 
         assertEquals(expected, actual);
     }
-        }
+}
